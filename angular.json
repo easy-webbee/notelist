@@ -122,6 +122,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "notelistchallenge:build:production",
+            "firebaseProject": "my-note-list",
+            "firebaseHostingSite": "my-note-list"
+          }
         }
       }
     }

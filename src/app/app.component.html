@@ -7,7 +7,7 @@
 
     <div *ngFor="let title of titles">
       <div class="title">
-        <h3 (click)="onClickTitle(title)">{{ title }}</h3>
+        <h3 (click)="onClickTitle(title)" style="cursor: pointer;">{{ title }}</h3>
         <h3 (click)="onClickDelete(title)" style="cursor: pointer;">X</h3>
       </div>
     </div>
