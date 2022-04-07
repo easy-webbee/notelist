@@ -34,9 +34,6 @@ export class NotesComponent implements OnInit, OnChanges {
     this.contents = this.oldContent;
   }
   ngOnChanges(changes: SimpleChanges): void {
-    // console.log(changes);
-    // console.log(changes['oldtitle']);
-    // console.log(changes['oldContent']);
 
     if (changes['oldtitle']) {
       this.title = changes['oldtitle'].currentValue;
