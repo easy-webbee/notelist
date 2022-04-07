@@ -1,0 +1,21 @@
+.container{
+    /* margin-top: 6%; */
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.notes{
+    width: 44%;
+    height: 100vw;
+    padding: 4% 3%;
+    background-color: rgba(188, 178, 145, 0.388);
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5%;
+}
+.inputbox{
+    width: 50%;
+    
+}

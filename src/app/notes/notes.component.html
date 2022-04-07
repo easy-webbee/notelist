@@ -1,0 +1,40 @@
+<div class="input-group">
+  <div>
+    <input
+    class="input-group"
+      type="text"
+      name=""
+      id=""
+      [(ngModel)]="title"
+      [(ngModel)]="titlechange"
+    />
+  </div>
+  <div>
+    <textarea
+    class="input-group"
+      name=""
+      id=""
+      cols="30"
+      rows="10"
+      [(ngModel)]="contents"
+      [(ngModel)]="contentchange"
+    ></textarea>
+  </div>
+
+  <div>
+    <button
+      type="submit"
+      (click)="onClickSave()"
+      [disabled]="!(titlechange || contentchange)"
+    >
+      Save
+    </button>
+    <button
+      type="submit"
+      (click)="onClickRevert()"
+      [disabled]="!(titlechange || contentchange)"
+    >
+      Revert
+    </button>
+  </div>
+</div>
